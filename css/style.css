@@ -1,0 +1,65 @@
+:root {
+  --verde: #2e7d4f;
+  --verde-escuro: #1d5234;
+  --claro: #f4f8f5;
+  --texto: #1f2a24;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+  color: var(--texto);
+  background: var(--claro);
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 5%;
+  background: #fff;
+  border-bottom: 3px solid var(--verde);
+}
+
+nav ul { display: flex; gap: 1.25rem; margin: 0; padding: 0; list-style: none; }
+nav a { color: var(--verde-escuro); font-weight: 600; text-decoration: none; }
+nav a:hover, nav a:focus-visible, nav a[aria-current="page"] { text-decoration: underline; }
+
+main { max-width: 960px; margin: 0 auto; padding: 1.5rem 5%; }
+h1, h2, h3 { color: var(--verde-escuro); line-height: 1.25; }
+
+img { max-width: 100%; height: auto; display: block; }
+figure { margin: 1rem 0; }
+figcaption { font-size: .9rem; color: #4a5a50; }
+
+section { margin-bottom: 2rem; }
+article { background: #fff; padding: 1rem 1.25rem; margin-bottom: 1rem; border-radius: 8px; }
+
+table { width: 100%; border-collapse: collapse; background: #fff; }
+caption { text-align: left; font-weight: 600; padding-bottom: .5rem; }
+th, td { padding: .6rem; border: 1px solid #cfdcd4; text-align: left; }
+
+progress { width: 100%; height: 1rem; accent-color: var(--verde); }
+
+form fieldset { margin-bottom: 1.25rem; padding: 1rem; border: 1px solid #cfdcd4; border-radius: 8px; background: #fff; }
+legend { font-weight: 700; color: var(--verde-escuro); }
+form label { display: block; margin-top: .75rem; }
+input[type="checkbox"] + label, input[type="radio"] + label { display: inline; margin: 0 1rem 0 .25rem; }
+input:not([type="checkbox"]):not([type="radio"]), select {
+  width: 100%; padding: .55rem; border: 1px solid #9fb3a7; border-radius: 6px; font: inherit;
+}
+input:focus-visible, select:focus-visible { outline: 3px solid var(--verde); outline-offset: 1px; }
+input:user-invalid { border-color: #b3261e; }
+
+button { margin-top: .5rem; padding: .7rem 1.4rem; border: 0; border-radius: 6px; font: inherit; font-weight: 600; cursor: pointer; }
+button[type="submit"] { background: var(--verde); color: #fff; }
+button[type="reset"] { background: #dfe7e2; color: var(--texto); }
+
+footer { padding: 1.5rem 5%; background: var(--verde-escuro); color: #fff; text-align: center; }
+footer a { color: #fff; }
+footer nav { display: flex; justify-content: center; gap: 1rem; }
